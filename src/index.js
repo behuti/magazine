@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./routes/Root";
 import ErrorPage from "./routes/Error";
 import Sports from "./routes/Sports";
+import Fashion from "./routes/Fashion";
+import Tech from "./routes/Tech";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +18,14 @@ const router = createBrowserRouter([
       {
         path: "sports",
         element: <Sports />,
+      },
+      {
+        path: "fashion",
+        element: <Fashion />,
+      },
+      {
+        path: "tech",
+        element: <Tech />,
       },
     ]
   },

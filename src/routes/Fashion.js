@@ -1,14 +1,13 @@
-import React from "react";
-import Hero from "../components/hero/hero";
-import Article from "../components/article/article";
-import AudioPlayer from "../components/audioPlayer/audioPlayer";
+import React from 'react'
+import Hero from '../components/hero/hero'
+import Article from '../components/article/article'
+import AudioPlayer from '../components/audioPlayer/audioPlayer'
 
-const Sports = () => {
+const Fashion = () => {
   return (
     <>
-      <div id="sports">
-        <Hero imgSrc={"img/nado.jpg"} />
-        <Article mainTitle={"Phelps Wins The Contest"}>
+        <Hero imgSrc={'img/fashion.jpg'}></Hero>
+        <Article mainTitle={"Kylie Jenner's New Classic Beauty Routine"}>
         <AudioPlayer audioSrc={'audio/swimming_news.ogg'}/>
           <p>
             In mauris ipsum, tempor vitae velit id, commodo consectetur turpis.
@@ -65,9 +64,8 @@ const Sports = () => {
             Nullam nec sagittis lacus.
           </p>
         </Article>
-      </div>
     </>
-  );
-};
+  )
+}
 
-export default Sports;
+export default Fashion
