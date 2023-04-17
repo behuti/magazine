@@ -18,7 +18,7 @@ const Fashion = () => {
             vehicula velit laoreet quis. Ut semper odio vel magna aliquet, at
             placerat dui auctor. Nam erat ligula, rhoncus in imperdiet id,
             auctor vitae felis. Nunc ut bibendum neque. Etiam consectetur in
-            orci pretium feugiat. Sed ut ipsum sit amet diam rutrum.
+            orci pretium feugiat. Sed ut ipsum sit amet diam rutrum tincidunt.
           </p>
           <p>
             Curabitur condimentum faucibus suscipit. Nulla dapibus metus id
