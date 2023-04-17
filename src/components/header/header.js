@@ -3,12 +3,16 @@ import { Link } from "react-router-dom";
 import styles from "./header.module.scss";
 
 const Header = () => {
-  const { Header, HeaderContainer, Logo, MainNavigation } = styles;
+  const { Header, HeaderContainer, Logo, MainNavigation, LogoLink } = styles;
 
   return (
     <header className={Header}>
       <div className={HeaderContainer}>
-        <div className={Logo}>EH.</div>
+        <div className={Logo}>
+          <Link to={'/'} className={LogoLink}>
+            EH.
+          </Link>
+        </div>
         <ul className={MainNavigation}>
           <li>
             <Link to={"/sports"}>Sports</Link>

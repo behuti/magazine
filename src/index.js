@@ -1,39 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
-import Root from "./routes/Root";
-import ErrorPage from "./routes/Error";
-import Sports from "./routes/Sports";
-import Fashion from "./routes/Fashion";
-import Tech from "./routes/Tech";
+import App from "./App";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "sports",
-        element: <Sports />,
-      },
-      {
-        path: "fashion",
-        element: <Fashion />,
-      },
-      {
-        path: "tech",
-        element: <Tech />,
-      },
-    ]
-  },
-]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
