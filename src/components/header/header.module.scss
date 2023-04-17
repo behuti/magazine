@@ -1,6 +1,19 @@
 @import './../../../variables.scss';
 
 .Header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0,0,0, .07);
+}
+
+.LogoLink {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    transition: color 150ms ease-in-out;
 }
 
 .HeaderContainer{
@@ -23,13 +36,10 @@
     list-style: none;
     
     a {
-        font-size: 2.5rem;
-        text-decoration: none;
-        color: black;
-        font-family: 'Bebas Neue', cursive;
-        transition: color 150ms ease-in-out;
+        @extend .LogoLink;
+
         &:hover {
-            color: #FFBA49;
+            color: $accent-color;
         }
     }
 }
