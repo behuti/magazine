@@ -1,7 +1,12 @@
 import React from "react";
 import styles from "./hero.module.scss";
 
-const Hero = ({imgSrc, imgDesc}) => {
+type Props = {
+  imgSrc: string;
+  imgDesc: string;
+}
+
+const Hero = ({imgSrc, imgDesc}: Props) => {
   const { Hero } = styles;
 
   return (

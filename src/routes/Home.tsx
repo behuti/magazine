@@ -22,7 +22,7 @@ const Home = () => {
           Welcome to our very <Link to={"/sports"}>first virtual release.</Link>
         </p>
       </BrutalistHeader>
-      <ContentTable />
+      <ContentTable sectionId="Home ContentTable"/>
     </>
   );
 };

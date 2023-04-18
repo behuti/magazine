@@ -1,6 +1,14 @@
-import PropTypes from "prop-types";
+import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./featuredArticle.module.scss";
+
+type Props = {
+  imgSource: string;
+  photoDesc: string;
+  articleTitle: string;
+  articleDate: string;
+  articleTag: string;
+};
 
 const FeaturedArticle = ({
   imgSource,
@@ -8,14 +16,14 @@ const FeaturedArticle = ({
   articleTitle,
   articleDate,
   articleTag,
-}) => {
+}: Props) => {
   const {
     FeaturedArticle,
     FeaturedArticleThumbnail,
     FeaturedArticleMetaData,
     FeaturedArticleTag,
     FeaturedArticleDate,
-    FeaturedArticleTitle
+    FeaturedArticleTitle,
   } = styles;
 
   return (
@@ -28,18 +36,12 @@ const FeaturedArticle = ({
           <span className={FeaturedArticleTag}>{articleTag}</span>
           <span className={FeaturedArticleDate}>{articleDate}</span>
         </div>
-        <Link to={'/fashion'} className={FeaturedArticleTitle}>{articleTitle}</Link>
+        <Link to={"/fashion"} className={FeaturedArticleTitle}>
+          {articleTitle}
+        </Link>
       </div>
     </article>
   );
-};
-
-FeaturedArticle.propTypes = {
-  imgSource: PropTypes.string,
-  photoDesc: PropTypes.string,
-  articleTitle: PropTypes.string,
-  articleTag: PropTypes.string,
-  articleDate: PropTypes.string,
 };
 
 export default FeaturedArticle;
