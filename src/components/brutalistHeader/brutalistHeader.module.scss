@@ -1,0 +1,22 @@
+@import './../../../variables.scss';
+
+.BrutalistHeader {
+  background-color: black;
+  padding: 10rem 0;
+  color: white;
+}
+
+.BrutalistHeaderContainer {
+  max-width: $desktop-container;
+  margin: 0 auto;
+}
+
+.BrutalistHeaderTitle {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.BrutalistHeaderContent {
+  max-width: 50%;
+  line-height: 1.75;
+}

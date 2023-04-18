@@ -1,0 +1,14 @@
+@import './../../../variables.scss';
+
+.ContentTable {
+  padding: 5rem 0;
+}
+
+.ContentTableContainer {
+  max-width: $desktop-container;
+  margin: 0 auto;
+}
+
+.ContentTableTitle {
+  font-size: 3rem;
+}
