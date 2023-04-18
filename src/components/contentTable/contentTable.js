@@ -8,9 +8,15 @@ const ContentTable = ({ sectionId }) => {
   return (
     <section id={sectionId} className={ContentTable}>
       <div className={ContentTableContainer}>
-        <h2 className={ContentTableTitle} >Trending on EH</h2>
+        <h2 className={ContentTableTitle}>Trending on EH</h2>
         <nav>
-          <FeaturedArticle imgSource={'img/featured-article.jpg'} photoDesc='featured article' articleDate='Apr 09, 2023' articleTag='Fashion' articleTitle='Ariana Martinez | A new enterprise model has raised for empowered women embrasing their feminity.'/>
+          <FeaturedArticle
+            imgSource={"img/featured-article.jpg"}
+            photoDesc="featured article"
+            articleDate="Apr 09, 2023"
+            articleTag="Fashion"
+            articleTitle="Ariana Martinez | A new enterprise model has been born for empowered women embracing their feminity."
+          />
         </nav>
       </div>
     </section>

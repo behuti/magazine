@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import styles from "./featuredArticle.module.scss";
 
 const FeaturedArticle = ({
@@ -27,7 +28,7 @@ const FeaturedArticle = ({
           <span className={FeaturedArticleTag}>{articleTag}</span>
           <span className={FeaturedArticleDate}>{articleDate}</span>
         </div>
-        <h3 className={FeaturedArticleTitle}>{articleTitle}</h3>
+        <Link to={'/fashion'} className={FeaturedArticleTitle}>{articleTitle}</Link>
       </div>
     </article>
   );
