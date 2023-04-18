@@ -1,11 +1,21 @@
-/* font-family: 'Bebas Neue', cursive;
-font-family: 'Changa One', cursive;
-font-family: 'Roboto Slab', serif; */
+/* font-family: 'Bebas Neue', cursive; 400
+
+font-family: 'Space Mono', monospace; 400 - 700 & italic*/
+
+
 body {
   margin: 0;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Space Mono', monospace;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Bebas Neue', cursive;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #FF2C55;
 }

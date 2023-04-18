@@ -1,11 +1,25 @@
+import { Link } from "react-router-dom";
+import BrutalistHeader from "../components/brutalistHeader/brutalistHeader";
+import ContentTable from "../components/contentTable/contentTable";
+
 const Home = () => {
   return (
-    <section>
-      <h1>
-        EH - Virtual Magazine
-      </h1>
-      <p>EH magazine is a minimal, brutalism look news portal, where you can find all the last updates regarding fashion, sports and technology. Welcome to our very first virtual release.</p>
-    </section>
-  )
-}
-export default Home
+    <>
+      <BrutalistHeader sectionId>
+        <p>
+          EH magazine is a{" "}
+          <strong>
+            <s>minimal, brutalism look</s>
+          </strong>{" "}
+          news portal, where you can find all the last updates regarding
+          fashion, sports, technology and much more. 
+          <br />
+          <br />
+          Welcome to our very <Link>first virtual release.</Link>
+        </p>
+      </BrutalistHeader>
+      <ContentTable />
+    </>
+  );
+};
+export default Home;

@@ -9,7 +9,7 @@
 }
 
 .LogoLink {
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-decoration: none;
     color: black;
     font-family: 'Bebas Neue', cursive;
@@ -37,6 +37,7 @@
     
     a {
         @extend .LogoLink;
+        font-size: 2.5rem;
 
         &:hover {
             color: $accent-color;
