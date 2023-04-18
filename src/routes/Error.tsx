@@ -1,5 +1,6 @@
-export default function ErrorPage() {
+import React from "react";
 
+export default function ErrorPage() {
   return (
     <center id="error-page">
       <h1>Oops!</h1>
