@@ -1,19 +1,26 @@
+import React from "react";
 import styles from "./brutalistHeader.module.scss";
 
-const BrutalistHeader = ({ sectionId, title, children }) => {
+type Props = {
+  sectionId: string;
+  title: string;
+  children: React.ReactNode;
+};
+
+const BrutalistHeader = ({ sectionId, title, children }: Props) => {
   const {
     BrutalistHeader,
     BrutalistHeaderContainer,
     BrutalistHeaderTitle,
     BrutalistHeaderContent,
     BrutalistHeaderBackground,
-    BrutalistHeaderfFader
+    BrutalistHeaderfFader,
   } = styles;
 
   return (
     <section id={sectionId} className={BrutalistHeader}>
       <div className={BrutalistHeaderContainer}>
-        <h1 className={BrutalistHeaderTitle}>EH - Virtual Magazine</h1>
+        <h1 className={BrutalistHeaderTitle}>{title}</h1>
         <div className={BrutalistHeaderContent}>{children}</div>
       </div>
       <img

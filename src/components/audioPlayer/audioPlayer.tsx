@@ -1,7 +1,11 @@
 import React from "react";
 import styles from "./audioPlayer.module.scss";
 
-const AudioPlayer = ({ audioSrc }) => {
+type Props = {
+  audioSrc: string;
+};
+
+const AudioPlayer = ({ audioSrc }: Props) => {
   const { AudioContainer } = styles;
 
   return (

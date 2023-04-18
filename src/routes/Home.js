@@ -5,7 +5,7 @@ import ContentTable from "../components/contentTable/contentTable";
 const Home = () => {
   return (
     <>
-      <BrutalistHeader sectionId>
+      <BrutalistHeader sectionId='homeBrutalistHeader' title='EH - Virtual Magazine'>
         <p>
           EH magazine is a{" "}
           <strong>
@@ -22,4 +22,5 @@ const Home = () => {
     </>
   );
 };
+
 export default Home;
