@@ -1,3 +1,5 @@
+@import './../../../variables.scss';
+
 .FeaturedArticle{
   display: flex;
   gap: 2rem;
@@ -19,6 +21,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 .FeaturedArticleTag {
   border-radius: 20px;
@@ -31,4 +34,13 @@
 }
 .FeaturedArticleTitle {
   font-size: 3rem;
+  text-decoration: none;
+  color: black;
+  transition: color 150ms ease-in;
+  font-family: $display-family;
+
+  &:hover {
+    color: $accent-color;
+    text-decoration: underline;
+  }
 }
