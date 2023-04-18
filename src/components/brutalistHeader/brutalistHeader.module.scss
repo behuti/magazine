@@ -1,7 +1,7 @@
 @import './../../../variables.scss';
 
 .BrutalistHeader {
-  background-color: black;
+  position: relative;
   padding: 10rem 0;
   color: white;
 }
@@ -9,6 +9,8 @@
 .BrutalistHeaderContainer {
   max-width: $desktop-container;
   margin: 0 auto;
+  position: relative;
+  z-index: 3;
 }
 
 .BrutalistHeaderTitle {
@@ -19,4 +21,25 @@
 .BrutalistHeaderContent {
   max-width: 50%;
   line-height: 1.75;
+}
+
+.BrutalistHeaderBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.BrutalistHeaderfFader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: .3;
+  z-index: 2;
 }
