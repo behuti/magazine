@@ -27,9 +27,9 @@ const FeaturedArticle = ({
   } = styles;
 
   return (
-    <article className={FeaturedArticle}>
+    <article className={FeaturedArticle} data-testid="featured-article">
       <figure className={FeaturedArticleThumbnail}>
-        <img src={imgSource} alt={photoDesc} />
+        <img src={imgSource} alt={photoDesc} data-testid="featured-article-img"/>
       </figure>
       <div>
         <div className={FeaturedArticleMetaData}>

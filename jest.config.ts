@@ -38,4 +38,5 @@ module.exports = {
         "^@tests(.*)$": "<rootDir>/src/tests$1",
     },
     moduleDirectories: ["node_modules", "<rootDir>"],
+    coveragePathIgnorePatterns: [".+\\.(css|styl|less|sass|scss)$"]
 };

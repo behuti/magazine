@@ -8,9 +8,21 @@ const renderComp = () => renderWithRouter(<Header />);
 
 afterEach(cleanup)
 
-describe("Header.tsx", () => {
+describe("<Header />", () => {
     test("should render the logo", () => {
         renderComp();
         expect(screen.getByText("EH.")).toBeInTheDocument();
     });
+    test('should have all the sports option', () => {
+        renderComp();
+        expect(screen.getByText("Sports")).toBeInTheDocument();
+    })
+    test('should have all the fashion option', () => {
+        renderComp();
+        expect(screen.getByText("Fashion")).toBeInTheDocument();
+    })
+    test('should have all the tech option', () => {
+        renderComp();
+        expect(screen.getByText("Tech")).toBeInTheDocument();
+    })
 });

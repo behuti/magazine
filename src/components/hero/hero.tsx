@@ -10,7 +10,7 @@ const Hero = ({imgSrc, imgDesc}: Props) => {
   const { Hero } = styles;
 
   return (
-    <section className={Hero}>
+    <section className={Hero} data-testid="hero">
       <img src={imgSrc} alt={imgDesc} />
     </section>
   );
