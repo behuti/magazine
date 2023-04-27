@@ -10,7 +10,7 @@ const AudioPlayer = ({ audioSrc }: Props) => {
 
   return (
     <section className={AudioContainer}>
-      <audio src={audioSrc} controls></audio>
+      <audio src={audioSrc} controls data-testid="audio-player"></audio>
     </section>
   );
 };
