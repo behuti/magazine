@@ -1,7 +1,12 @@
 import React from "react";
 import styles from "./article.module.scss";
 
-const Article = ({ mainTitle, children }) => {
+type Props = {
+  mainTitle: string;
+  children: React.ReactNode;
+};
+
+const Article = ({ mainTitle, children }: Props) => {
   const { ArticleContainer, ArticleTitle } = styles;
   return (
     <div className={ArticleContainer}>

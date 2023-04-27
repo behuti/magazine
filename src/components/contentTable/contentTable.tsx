@@ -1,12 +1,16 @@
-import PropTypes from "prop-types";
+import React from "react";
 import styles from "./contentTable.module.scss";
 import FeaturedArticle from "../featuredArticle/featuredArticle";
 
-const ContentTable = ({ sectionId }) => {
+type Props = {
+  sectionId: string;
+}
+
+const ContentTable = ({ sectionId }: Props) => {
   const { ContentTable, ContentTableContainer, ContentTableTitle } = styles;
 
   return (
-    <section id={sectionId} className={ContentTable}>
+    <section id={sectionId} className={ContentTable} data-testid="content-table">
       <div className={ContentTableContainer}>
         <h2 className={ContentTableTitle}>Trending on EH</h2>
         <nav>
@@ -21,10 +25,6 @@ const ContentTable = ({ sectionId }) => {
       </div>
     </section>
   );
-};
-
-ContentTable.propTypes = {
-  sectionId: PropTypes.string,
 };
 
 export default ContentTable;
