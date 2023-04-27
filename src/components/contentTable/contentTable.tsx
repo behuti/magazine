@@ -10,7 +10,7 @@ const ContentTable = ({ sectionId }: Props) => {
   const { ContentTable, ContentTableContainer, ContentTableTitle } = styles;
 
   return (
-    <section id={sectionId} className={ContentTable}>
+    <section id={sectionId} className={ContentTable} data-testid="content-table">
       <div className={ContentTableContainer}>
         <h2 className={ContentTableTitle}>Trending on EH</h2>
         <nav>
