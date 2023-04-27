@@ -1,8 +1,10 @@
 import React from "react";
-import { render, screen, cleanup  } from "@testing-library/react";
+import { screen, cleanup  } from "@testing-library/react";
+import { renderWithRouter } from "@tests/testingUtils";
+
 import Header from "./header";
 
-const renderComp = () => render(<Header />);
+const renderComp = () => renderWithRouter(<Header />);
 
 afterEach(cleanup)
 
